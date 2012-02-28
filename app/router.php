@@ -1,5 +1,5 @@
 <?php
 
-	$default_app = "backman";
+	$default_app = "example";
 
 ?>
