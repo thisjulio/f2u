@@ -2,12 +2,8 @@
 	
 	class database{
 	
-		public function mysql(){
-			return new mysql();
-		}
-		
-		public function sqlite(){
-			return new sqlite();
+		public function factory($database_manager){
+			return new $database_manager();
 		}
 	
 	}

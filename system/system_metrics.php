@@ -9,7 +9,7 @@
 		private $sqlite;
 		
 		public function init(){
-				$this->sqlite = database::sqlite();
+				$this->sqlite = database::factory("sqlite");
 				$connect = array(
 					"sqlite_file" => "system_metric.db"
 				);
@@ -46,5 +46,4 @@
 		}
 			
 	}
-
 ?>
