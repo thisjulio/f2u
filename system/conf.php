@@ -16,8 +16,12 @@
 	//get URL parameters
 	function geturlparameters(){
 			$strparam = substr($_SERVER['REQUEST_URI'],strpos($_SERVER['REQUEST_URI'],'.php')+5);
-			$param = explode("/",$strparam);
-			print_r($param);
+			if ($strparam){
+				$param = explode("/",$strparam);
+				return $param;
+			}else{
+				return NULL;
+			}	
 	}
 
 ?>
