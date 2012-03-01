@@ -1,10 +1,16 @@
 <?php
 
-	//echo of time execution
-	function exectime(){
-		$start = microtime(true);
-		$total = microtime(true) - $start;
-		echo 'Execution time: ' . number_format($total, 6) . ' ms';
+	//class to echo of time execution
+	class exectime{
+		private $start;
+		
+		public function exectime(){
+			$this->start = microtime(true);
+		}
+		
+		public function end_exectime(){
+			echo 'Execution time: ' . number_format(microtime(true) - $this->start, 6) . ' ms';
+		}
 	}
 	
 	//get URL parameters
@@ -13,4 +19,5 @@
 			$param = explode("/",$strparam);
 			print_r($param);
 	}
+
 ?>
