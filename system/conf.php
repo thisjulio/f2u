@@ -13,6 +13,4 @@
 			$param = explode("/",$strparam);
 			print_r($param);
 	}
-	
-	geturlparameters();
 ?>
