@@ -24,5 +24,5 @@
 	include "app/router.php";
 	
 	$app = new $default_app();
-	$app->call();
+	$app->run();
 ?>

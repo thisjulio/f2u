@@ -8,10 +8,10 @@
 			
 		protected function callapp($app_name){
 			$app = new $app_name();
-			$app->call();
+			$app->run();
 		}
 		
-		abstract public function call();
+		abstract public function run();
 		
 	}
 
