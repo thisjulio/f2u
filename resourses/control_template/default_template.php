@@ -19,8 +19,8 @@
 		}
 		
 		public function setFileTemplate($file_template){
-			if (file_exists("template/{$file_template}.template"))
-				$this->file_template = "template/{$file_template}.template";	
+			if (file_exists("template/{$file_template}.html"))
+				$this->file_template = "template/{$file_template}.html";	
 			else 
 				$this->error(1);
 		}
