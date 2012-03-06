@@ -5,7 +5,7 @@
 		protected $file_template;
 		public $tempate;
 	
-		public function showTemplate(){ //method of exibition template
+		public function showTemplate(){ //method of exhibition template
 		   	eval ('?>'.$this->template.'<?php ');
 		 }
 		
