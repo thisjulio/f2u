@@ -1,5 +1,5 @@
 <?php
 
-	$default_app = "example";
+	$default_app = "f2u";
 
 ?>
