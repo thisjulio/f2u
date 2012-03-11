@@ -3,7 +3,7 @@
 		'app' => "app/",
 		'system' => "system/",
 		'drivers' => "system/drivers/",
-		'interface' => "system/interface/",
+		'interface' => "system/interfaces/",
 		'control_template' => "resources/control_template/",
 		'misc' => "resources/misc/"
 	);
