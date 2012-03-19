@@ -16,7 +16,12 @@
 			return $this->DO_now->fetchArray();
 		}
 		
-	
+		public function to_array(){
+			$array = array();
+			while($line = $this->fetch_array())
+				$array[] = $line;
+			return $array;
+		}
 	}
 
 ?>
