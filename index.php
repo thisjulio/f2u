@@ -1,4 +1,9 @@
 <?php
+
+	/*
+	 * Este é o marco inicial para a restruturação do F2U
+	 * 
+	 */
 	require "system/functions.php";
 	require "system/config.php";
 	require "app/router.php";
