@@ -1,6 +1,5 @@
 <?php
-
-	//class to echo of time execution
+	//class to print the execution time on the screen
 	class exectime{
 		private $start;
 		
@@ -16,13 +15,7 @@
 	//get URL parameters
 	function geturlparameters(){
 			$strparam = substr($_SERVER['REQUEST_URI'],strpos($_SERVER['REQUEST_URI'],'.php')+5);
-			if ($strparam){
-				$param = explode("/",$strparam);
-				return $param;
-			}else{
-				return NULL;
-			}	
+			if ($strparam) return explode("/",$strparam);
+			else return NULL;
 	}
-	
-
 ?>
