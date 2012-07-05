@@ -23,7 +23,7 @@
 
 		public function toShow(){
 			$return = "<form method='{$this->method}'>\n";
-			foreach($this->getComposite() as $view){
+			foreach($this as $view){
 				$return .= "\t{$view->toShow()}<br />\n";
 			}
 			return $return."<input type='hidden' name='action' value='{$this->action->getActionName()}'/></form>";

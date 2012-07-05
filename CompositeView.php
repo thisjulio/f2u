@@ -6,19 +6,13 @@
 	 * @author Julio Cesar
 	 *
 	 */
-	abstract class CompositeView implements View{
-		private $composite = array();
-	
-		public function getComposite(){
-			return $this->composite;
-		}
-		
+	abstract class CompositeView extends Composite implements View{
 		/**
 		 * Método que adiciona uma View na composição.
 		 * @param View $view Componente de View a ser adicionado na composição.
 		 * @return void
 		 */
 		public function add(View $view){
-			$this->composite[] = $view;
+			parent::add($view);
 		}
 	}

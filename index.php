@@ -1,7 +1,7 @@
 <?php
 	function __autoload($classname){
 			if(file_exists("{$classname}.php"))
-				require "{$classname}.php";
+				require_once "{$classname}.php";
 	}
 	
 	//O teste!
